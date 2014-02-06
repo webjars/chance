@@ -10,11 +10,11 @@
 
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
-    <artifactId>chancejs</artifactId>
-    <version>0.5.4</version>
+    <artifactId>chance</artifactId>
+    <version>0.5.4-SNAPSHOT</version>
 
-    <name>webjars-chancejs</name>
-    <description>WebJar for URI.js</description>
+    <name>Chance</name>
+    <description>WebJar for Chance</description>
     <url>http://webjars.org</url>
 
     <developers>
@@ -34,9 +34,9 @@
     </licenses>
 
     <scm>
-        <url>http://github.com/webjars/chancejs</url>
-        <connection>scm:git:https://github.com/webjars/chancejs.git</connection>
-        <developerConnection>scm:git:https://github.com/webjars/chancejs.git</developerConnection>
+        <url>http://github.com/webjars/chance</url>
+        <connection>scm:git:https://github.com/webjars/chance.git</connection>
+        <developerConnection>scm:git:https://github.com/webjars/chance.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
@@ -83,7 +83,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/${project.artifactId}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}/chancejs-${upstream.version}"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}/chancejs-${upstream.version}" includes="chance.js"/>
                                 </move>
                             </target>
                         </configuration>
@@ -116,12 +116,6 @@
                 </configuration>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>${project.basedir}/src/main/resources</directory>
-                <targetPath>${destDir}</targetPath>
-            </resource>
-        </resources>
     </build>
 
 </project>
