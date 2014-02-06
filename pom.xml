@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>chance</artifactId>
-    <version>0.5.4-SNAPSHOT</version>
+    <version>0.5.4</version>
 
     <name>Chance</name>
     <description>WebJar for Chance</description>
@@ -37,10 +37,10 @@
         <url>http://github.com/webjars/chance</url>
         <connection>scm:git:https://github.com/webjars/chance.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/chance.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>chance-0.5.4</tag>
     </scm>
 
-    <dependencies/>
+    <dependencies />
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -83,7 +83,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/${project.artifactId}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}/chancejs-${upstream.version}" includes="chance.js"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}/chancejs-${upstream.version}" includes="chance.js" />
                                 </move>
                             </target>
                         </configuration>
