@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>chance</artifactId>
-    <version>0.5.4</version>
+    <version>0.5.5-SNAPSHOT</version>
 
     <name>Chance</name>
     <description>WebJar for Chance</description>
@@ -37,7 +37,7 @@
         <url>http://github.com/webjars/chance</url>
         <connection>scm:git:https://github.com/webjars/chance.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/chance.git</developerConnection>
-        <tag>chance-0.5.4</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <dependencies />
